@@ -11,8 +11,8 @@ function writePassword() {
   }
   function generatePassword(){
     var passwordLength = prompt("How Long do you need your Password");
-    if (passwordLength < 4){
-        confirm("Passowrd should be atleast 4 character long");
+    if (passwordLength < 8 || passwordLength > 128){
+        confirm("Passowrd should be between 8 to 128 character long");
     }
     else{
         var specialChar = confirm("Click ok to use special Charcter in your password?");
